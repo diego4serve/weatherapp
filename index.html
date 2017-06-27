@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather App</title>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.css"/>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<section class="hero hero-img is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article id="info-container" class="tile is-child box has-text-centered">
+            <h1 class="title is-1">Weather App</h1>
+            <div class="columns">
+              <div id="icon-container" class="column is-1 is-offset-5"></div>
+              <div id="weather-container" class="column is-2"></div>
+            </div>
+            <a id="toggle-units" class="button is-small is-dark">Toggle units</a>
+            <div class="columns">
+              <div id="location-container" class="column"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>

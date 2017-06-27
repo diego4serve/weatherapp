@@ -1,0 +1,35 @@
+body {
+  color: white;
+}
+
+.hero-img {
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999;
+}
+
+#info-container {
+  background-color: rgba(0, 20, 20, 0.3);
+}
+
+h1.title {
+  color: white;
+}
+
+h2.title {
+  color: white;
+}
+
+h2.subtitle {
+  color: white;
+}
+
+#weather-container {
+  padding-top: 20px;
+}
+
+#location-container {
+  margin-top: 20px;
+}
