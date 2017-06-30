@@ -18,16 +18,18 @@ $( document ).ready(function() {
       $.getJSON(req_url, function(data) {
         temp_c = data.main.temp;
         temp_f = (temp_c * 1.8) + 32;
+        var status = data.weather[0].main;
         var icon = data.weather[0].icon;
         var img_url = "url(img/" + icon + ".jpg)";
         var icon_url = "<img src=\"http://openweathermap.org/img/w/" + icon + ".png\"/>";
-        var city_text = "<h2 class=\"title\">" + data.name + ", " + data.sys.country + " - " + data.weather[0].main + "</h2>";
-        var temperature_text = "<h2 class=subtitle>" + temp_c + " Cº" + "</h2>";
+        var city_text = "<h2 class=\"title\">" + data.name + ", " + data.sys.country + "</h2>";
+        var temperature_text = "<h2 class=subtitle>" + temp_c + "º C" + "</h2>";
 
         $('.hero-img').css('background-image', img_url);
         $('#icon-container').append(icon_url);
         $('#weather-container').append(temperature_text);
         $('#location-container').append(city_text);
+        $('#status').text(status);
       })
     });
   }
